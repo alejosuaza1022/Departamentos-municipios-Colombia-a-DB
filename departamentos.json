@@ -1,0 +1,137 @@
+{
+    "estado": true,
+    "resultado": [
+        {
+            "CODIGO_DEPARTAMENTO": "91",
+            "NOMBRE_DEPARTAMENTO": "AMAZONAS"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "05",
+            "NOMBRE_DEPARTAMENTO": "ANTIOQUIA "
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "81",
+            "NOMBRE_DEPARTAMENTO": "ARAUCA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "88",
+            "NOMBRE_DEPARTAMENTO": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "08",
+            "NOMBRE_DEPARTAMENTO": "ATLÁNTICO"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "11",
+            "NOMBRE_DEPARTAMENTO": "BOGOTÁ, D. C."
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "13",
+            "NOMBRE_DEPARTAMENTO": "BOLÍVAR"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "15",
+            "NOMBRE_DEPARTAMENTO": "BOYACÁ"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "17",
+            "NOMBRE_DEPARTAMENTO": "CALDAS"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "18",
+            "NOMBRE_DEPARTAMENTO": "CAQUETÁ"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "85",
+            "NOMBRE_DEPARTAMENTO": "CASANARE"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "19",
+            "NOMBRE_DEPARTAMENTO": "CAUCA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "20",
+            "NOMBRE_DEPARTAMENTO": "CESAR"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "27",
+            "NOMBRE_DEPARTAMENTO": "CHOCÓ"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "25",
+            "NOMBRE_DEPARTAMENTO": "CUNDINAMARCA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "23",
+            "NOMBRE_DEPARTAMENTO": "CÓRDOBA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "94",
+            "NOMBRE_DEPARTAMENTO": "GUAINÍA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "95",
+            "NOMBRE_DEPARTAMENTO": "GUAVIARE"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "41",
+            "NOMBRE_DEPARTAMENTO": "HUILA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "44",
+            "NOMBRE_DEPARTAMENTO": "LA GUAJIRA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "47",
+            "NOMBRE_DEPARTAMENTO": "MAGDALENA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "50",
+            "NOMBRE_DEPARTAMENTO": "META"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "52",
+            "NOMBRE_DEPARTAMENTO": "NARIÑO"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "54",
+            "NOMBRE_DEPARTAMENTO": "NORTE DE SANTANDER"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "86",
+            "NOMBRE_DEPARTAMENTO": "PUTUMAYO"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "63",
+            "NOMBRE_DEPARTAMENTO": "QUINDÍO"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "66",
+            "NOMBRE_DEPARTAMENTO": "RISARALDA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "68",
+            "NOMBRE_DEPARTAMENTO": "SANTANDER"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "70",
+            "NOMBRE_DEPARTAMENTO": "SUCRE"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "73",
+            "NOMBRE_DEPARTAMENTO": "TOLIMA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "76",
+            "NOMBRE_DEPARTAMENTO": "VALLE DEL CAUCA"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "97",
+            "NOMBRE_DEPARTAMENTO": "VAUPÉS"
+        },
+        {
+            "CODIGO_DEPARTAMENTO": "99",
+            "NOMBRE_DEPARTAMENTO": "VICHADA"
+        }
+    ]
+}
