@@ -44,6 +44,10 @@ def fill_DB():
     with con:
         try:
             curs = con.cursor()
+            query_table_states  = 'create table if not exists states (id integer, name varchar, constraint pk_states PRIMARY KEY(id));'
+            querry_table_cities = 'create table if not exists citys (id integer, name varchar, id_state integer, CONSTRAINT fk_citys_states FOREIGN KEY(id_state)  REFERENCES states(id) ON DELETE CASCADE);'
+            curs.execute(query_table_states)
+            curs.execute(querry_table_cities)
             for id, value in data_json.items():
                 data_to_insert = []
                 municipios = value['Municipios']
