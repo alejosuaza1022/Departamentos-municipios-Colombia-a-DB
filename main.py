@@ -1,13 +1,13 @@
+import psycopg2
+import traceback
+import json
 import os
 from dotenv import load_dotenv
 load_dotenv('.env')
 
-import json
-import traceback
-import psycopg2
 data_json = {}
-con = psycopg2.connect(dbname=os.getenv('DBNAME'), user=os.getenv('USER'),
-                       host=os.getenv('DBHOST'), password=os.getenv('DBPASS'))
+con = psycopg2.connect(dbname=os.getenv('DBNAME'), user=os.getenv('DBUSER'),
+                       host=os.getenv('DBHOST'), password=os.getenv('DBPASS'), sslmode='require')
 
 
 def generate_dep_mun():
@@ -40,24 +40,24 @@ complete_dep_mun()
 
 
 def fill_DB():
-    list_fields = ('id', 'name', 'id_state')
+    list_fields = ('id', 'city_name', 'state_id')
     with con:
         try:
             curs = con.cursor()
-            query_table_states  = 'create table if not exists states (id integer, name varchar, constraint pk_states PRIMARY KEY(id));'
-            querry_table_cities = 'create table if not exists citys (id integer, name varchar, id_state integer, CONSTRAINT fk_citys_states FOREIGN KEY(id_state)  REFERENCES states(id) ON DELETE CASCADE);'
+            query_table_states = 'create table if not exists states (id integer, name varchar, constraint pk_states PRIMARY KEY(id));'
+            querry_table_cities = 'create table if not exists cities (id integer, name varchar, id_state integer, CONSTRAINT fk_citys_states FOREIGN KEY(id_state)  REFERENCES states(id) ON DELETE CASCADE);'
             curs.execute(query_table_states)
             curs.execute(querry_table_cities)
             for id, value in data_json.items():
                 data_to_insert = []
                 municipios = value['Municipios']
                 for v in municipios:
-                    v['id_depart'] =  int(id)
+                    v['id_depart'] = int(id)
                     data_to_insert.append(tuple(v.values()))
                 nom_dep = value['Nombre']
-                query = f"INSERT INTO states (id,name) values ({id},'{nom_dep}');"
+                query = f"INSERT INTO states (id,state_name) values ({id},'{nom_dep}');"
                 query1 = curs.mogrify(query + "INSERT INTO {} ({}) VALUES {}".format(
-                    'citys',
+                    'cities',
                     ','.join(list_fields),
                     ','.join(['%s'] * len(municipios))
                 ), data_to_insert)
