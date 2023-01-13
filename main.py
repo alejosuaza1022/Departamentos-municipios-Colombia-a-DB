@@ -40,7 +40,7 @@ complete_dep_mun()
 
 
 def fill_DB():
-    list_fields = ('id', 'name', 'id_state')
+    list_fields = ('id', 'name', 'state_id')
     with con:
         try:
             curs = con.cursor()
@@ -53,7 +53,7 @@ def fill_DB():
                 nom_dep = value['Nombre']
                 query = f"INSERT INTO states (id,name) values ({id},'{nom_dep}');"
                 query1 = curs.mogrify(query + "INSERT INTO {} ({}) VALUES {}".format(
-                    'citys',
+                    'cities',
                     ','.join(list_fields),
                     ','.join(['%s'] * len(municipios))
                 ), data_to_insert)
